@@ -16,7 +16,6 @@ class Store {
   static removeFromLocalStorage(newCartProduct) {
     let productId = newCartProduct.id;
     let cartProducts = Store.getProductsFromLocalStorage();
-    console.log(cartProducts);
     let filteredArray = cartProducts.filter(
       (product) => product.id !== productId
     );
