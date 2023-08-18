@@ -15,7 +15,6 @@ let getProducts = () => {
   fetch("https://fakestoreapi.com/products?limit=12")
     .then((res) => res.json())
     .then((responseData) => {
-      console.log(responseData);
       responseData.forEach((product) => {
         UI.showProducts(product, productDiv);
       });
